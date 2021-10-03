@@ -320,13 +320,11 @@ button:hover {
 
 	.menu {
 		width: 320px;
-		-webkit-transform: translateX(-100%) !important;
 		transform: translateX(-100%) !important;
 	}
 
 	.menu.open {
 		display: inline-block;
-		-webkit-transform: translateX(0) !important;
 		transform: translateX(0) !important;
 	}
 
