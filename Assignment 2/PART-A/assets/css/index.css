@@ -106,8 +106,7 @@ ul li {
 }
 
 .menu .social-media {
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 30px;
 }
 
 .menu .social-media ul li {
@@ -152,7 +151,7 @@ ul li {
 	max-height: 100vh !important;
 	max-width: 80vw !important;
 	min-width: 45px !important;
-	/* overflow-x: hidden !important; */
+	overflow-x: hidden !important;
 	overflow-y: auto !important;
 	/* padding: 0; */
 	position: fixed !important;
@@ -187,6 +186,24 @@ ul li {
 	text-align: center;
 	display: inline-block;
 	line-height: 60px;
+}
+
+.menu .date-time {
+	position: relative;
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+}
+
+.menu .date-time p {
+	border-top: 1px solid rgba(250, 250, 250, 0.1);
+	display: inline-block;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 13px;
 }
 
 .section {

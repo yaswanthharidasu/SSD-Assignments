@@ -32,4 +32,30 @@ function closeMenu() {
 	menu.classList.remove("open");
 }
 
+function refreshTime() {
+	var refresh = 1000; // Refresh rate in milli seconds
+	mytime = setTimeout("displayTime()", refresh);
+}
+
+function displayTime() {
+	var today = new Date();
+	var date =
+		today.getDate() +
+		"/" +
+		(today.getMonth() + 1) +
+		"/" +
+		today.getFullYear();
+	var currentHours = ("0" + today.getHours()).substr(-2);
+	var currentMins = ("0" + today.getMinutes()).substr(-2);
+	var currentSecs = ("0" + today.getSeconds()).substr(-2);
+	var time = currentHours + ":" + currentMins + ":" + currentSecs;
+	var dateTime = date + " " + time;
+	console.log(dateTime);
+	var id = document.getElementById("display-date-time");
+	id.innerHTML = dateTime;
+	refreshTime();
+}
+
+displayTime();
+
 onStart();
