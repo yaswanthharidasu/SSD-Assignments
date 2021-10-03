@@ -1,0 +1,55 @@
+.box {
+	border-radius: 5px;
+	box-shadow: 25px 25px 20px -20px var(--dark);
+	padding: 30px;
+	background-color: white;
+}
+
+.box:not(:last-child) {
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+.projects h2 {
+	color: var(--dark);
+}
+
+.projects p {
+	color: var(--main);
+	margin-bottom: 5px;
+}
+
+.project-items li {
+	color: var(--main);
+	margin-bottom: 5px !important;
+}
+
+.cyan {
+	border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.blue {
+	border-top: 3px solid hsl(212, 86%, 64%);
+}
+.orange {
+	border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+	.projects {
+		list-style-type: none;
+	}
+}
+
+@media (min-width: 950px) {
+	.projects {
+		list-style-type: none;
+	}
+	.box-down {
+		position: relative;
+		top: 100px;
+	}
+	.box {
+		width: 100%;
+	}
+}

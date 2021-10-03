@@ -2,16 +2,11 @@
 	box-sizing: border-box;
 }
 
-body {
-	font-family: "Lato", sans-serif;
-}
-
-h2 {
+.education-details h2 {
 	margin: 10px 5px !important;
 }
 
-p {
-	/* padding: 0px !important; */
+.education-details p {
 	margin: 5px 5px !important;
 	padding: 0px 0px !important;
 }
@@ -28,7 +23,7 @@ p {
 	content: "";
 	position: absolute;
 	width: 6px;
-	background-color: white;
+	background-color: var(--main);
 	top: 0;
 	bottom: 0;
 	left: 50%;
@@ -51,7 +46,7 @@ p {
 	height: 25px;
 	right: -17px;
 	background-color: white;
-	border: 4px solid #8c363e;
+	border: 4px solid var(--dark);
 	top: 15px;
 	border-radius: 50%;
 	z-index: 1;
@@ -76,7 +71,7 @@ p {
 	right: 30px;
 	border: medium solid white;
 	border-width: 10px 0 10px 10px;
-	border-color: transparent transparent transparent #a43f49;
+	border-color: transparent transparent transparent var(--main);
 }
 
 /* Arrows pointing left */
@@ -86,11 +81,10 @@ p {
 	position: absolute;
 	top: 22px;
 	width: 0;
-	/* z-index: 1; */
 	left: 30px;
 	border: medium solid white;
 	border-width: 10px 10px 10px 0;
-	border-color: transparent #a43f49 transparent transparent;
+	border-color: transparent var(--main) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -100,15 +94,20 @@ p {
 
 .education-details {
 	padding: 10px 30px;
-	background-color: #a43f49;
+	background-color: white;
 	position: relative;
-	color: white;
+	color: var(--main);
 	border-radius: 6px;
+	border-width: thick;
+	border-color: var(--main);
 }
 
 .education-details p{
+	color: var(--main);
 	padding-top: 0px 0px;
 }
+
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
