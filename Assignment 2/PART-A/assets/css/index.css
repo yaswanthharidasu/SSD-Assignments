@@ -279,7 +279,7 @@ img {
 	color: #fff;
 	letter-spacing: 0.5px;
 }
-
+/* 
 .white-button a {
 	display: inline-block;
 	padding: 12px 20px;
@@ -295,6 +295,16 @@ img {
 .white-button a:hover {
 	background-color: #fff;
 	color: var(--main);
+} */
+
+.education-details a{
+	color: var(--main);
+	/* text-transform: uppercase; */
+	font-weight: 800;
+}
+
+.education-details a:hover{
+	color: var(--dark);
 }
 
 #menu-toggle,
