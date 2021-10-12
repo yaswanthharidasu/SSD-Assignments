@@ -1,8 +1,0 @@
-Software Engineering Research Center(SERC) has a eminent faculty with vast teaching and research experience in and outside India. Some of the key focus areas:
-    1) Empirical Research and Process Improvement
-    2) Formal Methods in Software Engineering
-    3) Requirements Engineering and Quality Attributes
-    4) Complex System Development
-    5) Cloud Computing
-    6) Education Technologies
-    7) Usability Engineering
