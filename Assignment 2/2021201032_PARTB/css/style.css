@@ -241,9 +241,9 @@ a:focus {
 .carousel {
 	position: relative;
 	width: 100%;
-	min-height: 400px;
+	min-height: 200px;
 	background: #ffffff;
-	margin-bottom: 45px;
+	margin-bottom: 0px;
 }
 
 .carousel .container-fluid {
@@ -253,7 +253,7 @@ a:focus {
 .carousel .carousel-item {
 	position: relative;
 	width: 100%;
-	min-height: 400px;
+	height: 500px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -263,8 +263,7 @@ a:focus {
 .carousel .carousel-img {
 	position: relative;
 	width: 100%;
-	height: 100%;
-	min-height: 400px;
+	height: 500px;
 	text-align: right;
 	overflow: hidden;
 }
@@ -284,42 +283,6 @@ a:focus {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
-
-.carousel .carousel-text {
-	position: absolute;
-	max-width: 992px;
-	padding: 0 15px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	z-index: 2;
-}
-
-.carousel .carousel-text h3 {
-	color: #e81c2e;
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: 4px;
-	text-transform: uppercase;
-	margin-bottom: 0px;
-}
-
-.carousel .carousel-text h1 {
-	color: #ffffff;
-	font-size: 90px;
-	font-weight: 700;
-	margin-bottom: 20px;
-	text-transform: capitalize;
-}
-
-.carousel .carousel-text p {
-	max-width: 500px;
-	color: #ffffff;
-	font-size: 18px;
-	margin-bottom: 40px;
 }
 
 .carousel .btn.btn-custom {
@@ -373,67 +336,6 @@ a:focus {
 .carousel .animated {
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
-}
-
-@media (max-width: 991.98px) {
-	.carousel .carousel-text h3 {
-		margin-bottom: 5px;
-	}
-
-	.carousel .carousel-text h1 {
-		font-size: 60px;
-	}
-
-	.carousel .carousel-text p {
-		font-size: 16px;
-	}
-
-	.carousel .carousel-text .btn {
-		padding: 12px 30px;
-		font-size: 15px;
-		letter-spacing: 0;
-	}
-}
-
-@media (max-width: 767.98px) {
-	.carousel .carousel-text h3 {
-		font-size: 18px;
-		letter-spacing: 2px;
-		margin-bottom: 15px;
-	}
-
-	.carousel .carousel-text h1 {
-		font-size: 45px;
-	}
-
-	.carousel .carousel-text .btn {
-		padding: 10px 25px;
-		font-size: 15px;
-		letter-spacing: 0;
-	}
-}
-
-@media (max-width: 575.98px) {
-	.carousel .carousel-text h3 {
-		font-size: 14px;
-		letter-spacing: 1px;
-		margin-bottom: 10px;
-	}
-
-	.carousel .carousel-text h1 {
-		font-size: 30px;
-		margin-bottom: 15px;
-	}
-
-	.carousel .carousel-text p {
-		margin-bottom: 25px;
-	}
-
-	.carousel .carousel-text .btn {
-		padding: 8px 20px;
-		font-size: 14px;
-		letter-spacing: 0;
-	}
 }
 
 /*******************************/
@@ -521,6 +423,12 @@ a:focus {
 	}
 }
 
+.updates {
+	padding: 30px 10px;
+	/* margin: 30px 20px; */
+	box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.1);
+}
+
 /*******************************/
 /******* Section Header ********/
 /*******************************/
@@ -580,9 +488,20 @@ a:focus {
 	}
 }
 
+@media (max-width: 767.98px) {
+	.updates {
+		margin-bottom: 100px;
+	}
+}
+
 @media (max-width: 575.98px) {
 	.section-header h2 {
 		font-size: 35px;
+	}
+}
+@media (max-width: 991.98px) {
+	.section-header h2 {
+		font-size: 45px;
 	}
 }
 
@@ -626,6 +545,22 @@ a:focus {
 	color: #e81c2e;
 }
 
+.team .about-content ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 25px;
+}
+
+.team .about-content ul li {
+	margin-bottom: 5px;
+}
+
+.team .about-content ul li i {
+	margin-right: 8px;
+	color: #e81c2e;
+}
+
 .about-avatar img {
 	width: 200px;
 	height: 200px;
@@ -644,7 +579,8 @@ td {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-td, th{
+td,
+th {
 	padding: 10px 10px;
 }
 
@@ -1935,4 +1871,29 @@ td, th{
 
 .footer .copyright p a:hover {
 	color: #ffffff;
+}
+.footer .footer-social {
+	position: relative;
+	margin-top: 20px;
+	display: flex;
+}
+.footer .footer-social a {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #202c45;
+	background: #ffffff;
+	border-radius: 40px;
+	margin-right: 5px;
+	transition: 0.5s;
+}
+.footer .footer-social a:last-child {
+	margin: 0;
+}
+
+.footer .footer-social a:hover {
+	color: #ffffff;
+	background: #e81c2e;
 }

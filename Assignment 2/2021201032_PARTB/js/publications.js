@@ -41,7 +41,47 @@ function getPublications(url) {
 					" (" +
 					yearText +
 					")";
+
 				$("#journals").append(journal);
+			}
+			var conferences = xmlDoc.getElementsByTagName("inproceedings");
+			for (var i = 0; i < conferences.length; i++) {
+				var author = conferences[i].getElementsByTagName("author");
+				var title = conferences[i].getElementsByTagName("title");
+				var ee = conferences[i].getElementsByTagName("ee");
+				var year = conferences[i].getElementsByTagName("year");
+
+				var link;
+				for (var j = 0; j < ee.length; j++) {
+					link = ee[j].innerHTML;
+				}
+				var titleText;
+				for (var j = 0; j < title.length; j++) {
+					titleText = title[j].innerHTML;
+				}
+				var yearText;
+				for (var j = 0; j < year.length; j++) {
+					yearText = year[j].innerHTML;
+				}
+				var authors = ": ";
+				for (var j = 0; j < author.length; j++) {
+					authors += author[j].innerHTML;
+					if (j != author.length - 1) {
+						authors += ",";
+					}
+				}
+				var journal =
+					'<li><i class="far fa-check-circle"></i><a target=_blank href=' +
+					link +
+					">" +
+					titleText +
+					"</a>" +
+					authors +
+					" (" +
+					yearText +
+					")";
+
+				$("#conferences").append(journal);
 			}
 		}
 	};
@@ -62,7 +102,6 @@ for (var i = 0; i < urls.length; i++) {
 	getPublications(urls[i]);
 }
 
-var l = new List('test-list', {
-	page: 3,
-	pagination: true
+$(document).ready(function () {
+	$("#example").dynatable();
 });
