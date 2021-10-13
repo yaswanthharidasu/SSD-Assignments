@@ -102,6 +102,3 @@ for (var i = 0; i < urls.length; i++) {
 	getPublications(urls[i]);
 }
 
-$(document).ready(function () {
-	$("#example").dynatable();
-});
